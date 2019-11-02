@@ -44,16 +44,3 @@ function generatePassword() {
 }
 
 genButton.addEventListener('click', generatePassword);
-
-
-
-
-
-// console.log(upperChar);
-// console.log(lowerChar);
-
-
-
-
-// alert(passLength);
-// alert(passwordBank);
