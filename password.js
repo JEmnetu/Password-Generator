@@ -8,6 +8,7 @@ var upperChar = false;
 var lowerChar = false;
 var specialChar = false;
 var numChar = false;
+var passwordBox = document.getElementById("password");
 var genButton = document.querySelector('#generate');
 
 var passLength = prompt("Enter your password length");
@@ -39,7 +40,7 @@ function generatePassword() {
     for (i = 0; i < passLength; i++) {
         password = password + passwordBank.charAt(Math.floor((Math.random() * passwordBank.length) + 1));
     }
-    alert(password);
+    passwordBox.textContent = password;
 }
 
 genButton.addEventListener('click', generatePassword);
