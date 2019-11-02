@@ -39,7 +39,7 @@ function generatePassword() {
     for (i = 0; i < passLength; i++) {
         password = password + passwordBank.charAt(Math.floor((Math.random() * passwordBank.length) + 1));
     }
-    console.log(password);
+    alert(password);
 }
 
 genButton.addEventListener('click', generatePassword);
